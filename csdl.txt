@@ -1,0 +1,40 @@
+mô tả cơ bản csdl
+--Người dùng (user)
+-id tự động tăng, khóa chính
+-tên
+-email duy nhất
+-password mã hóa md5
+-sdt
+-địa chỉ
+-giới tính
+-ngày tháng năm sinh
+-thời gian tạo
+-quyền 0/1/ mặc định là 1 ( 0admin,1 nguoidung)
+-trạng thái 0/1 mặc định là 1 (0 là khóa , 1 là mở)
+
+--Bài đăng (post)
+-id bài đăng tự động tăng, khóa chính
+-id người dùng khóa ngoại
+-mô tả 
+-Vị trí
+-trạng thái 0/1 (0 là khóa 1 là mở) mặc định 1
+-thời gian datetime
+
+--ảnh bài đăng (image_post)
+-id ảnh bài đăng tự động tăng , khóa chính
+-id bài đăng khóa ngoại
+-link
+
+--video bài đăng (video_post)
+--bình luận bài đăng (comment)
+-id bình luân kháo chính tự đọng tăng, 
+-id người dùng khóa ngoại
+-id baidang khóa ngoại
+-mô tả bài đăng
+
+--gói (packages)
+
+
+--gói người dùng mua gói (user_packages)
+
+-- ứng tuyển (applications)

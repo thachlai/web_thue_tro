@@ -1,0 +1,44 @@
+webthuetro/     # Thư mục gốc của dự án
+│
+├── admin/          # floder chứa các file Khu vực dành cho Admin
+│   └── admin.php        # Trang dashboard admin
+..........
+│
+├── uploads/                   #chứa ảnh lưu trử của người dùng up lên  
+│   ├── nguoidung/
+│   │    ├──default.png         #ảnh mặc định nếu người dùng không up avatar
+│   │    └──một số ảnh khác,...
+│   ├── post/
+│   │    noimg....png            #ảnh mặc định nếu bài đăng  không up ảnh
+│   │    └──một số ảnh khác,...
+.......
+├── img/           #chứa tài nguyên ảnh  của trang web  
+│   ├──logo.png            # Logo của web
+│   └──một số ảnh khác,...
+├── user/                  # Khu vực dành cho người dùng
+│   ├── index.php          # Trang chính sau khi login
+│   └── profile.php        # Trang hồ sơ người dùng
+│
+├── auth/           # floder chứa các file xử lý người dùng của hệ thống
+│   ├── login.php           #file xử lý đăng nhập
+│   ├── signup.php          #file xử lý đăng ký
+│   ├── forgot_password.php #flie xử lý quên mật khẩu
+│   ├── reset_password.php  #file xử lý reset mật khẩu từ mail quên mật khẩu     
+│   └── logout.php          #khi xử lý sự kiện đăng xuất
+│
+├── include/        #floder chứa  Các file dùng chung toàn hệ thống
+│   ├── header.php         # Header chung
+│   ├── footer.php         # Footer chung
+│   ├── navbar.php         # Thanh menu chung
+│   ├── functions.php      # Các hàm kiểm tra
+│   └── conn.php           # Kết nối cơ sở dữ liệu
+├── css/
+│   ├── main.css            #Cấu hình chung cho các file php  body để sử dụng header, flooter , navbar
+│   ├── detail.css         #Cấu hình chung cho các file hiển thị nội dung các bảng csdl
+│   ├── add.css             #Cấu hình chung cho các file thêm nội dung vào các bảng csdl
+│   ├── auth.css             #Cấu hình chung cho các file xử lý chức năng sever
+│   └── list.css            #Cấu hình chung cho các file hiển thị đổ dữ liệu từ bảng csdl
+END
+
+Thư viện ngoài source dự án
+PHPMailer-master
